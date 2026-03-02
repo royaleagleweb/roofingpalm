@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flat Roofing in West Palm Beach, FL | Roofing Palm</title>
-  <meta name="description" content="Expert flat roof installation, repair, and replacement in West Palm Beach & South Florida. TPO, EPDM, modified bitumen & BUR systems. Licensed & insured. Free estimates.">
+  <title>Flat Roofing | Roofing Palm</title>
+  <meta name="description" content="Expert flat roof installation, repair, and replacement in South Florida. TPO, EPDM, modified bitumen & BUR systems. Licensed & insured. Free estimates.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -101,7 +101,7 @@
         <span class="separator">/</span>
         <span>Flat Roof</span>
       </div>
-      <h1>Flat Roofing in West Palm Beach, FL</h1>
+      <h1>Flat Roofing</h1>
       <p>Modern, durable flat roofing systems engineered for South Florida's commercial and residential properties. Expert installation with premium materials built to last.</p>
     </div>
   </section>
@@ -150,7 +150,7 @@
         <div class="animate-on-scroll">
           <span class="section-label">Flat Roofing Experts</span>
           <h2>The Modern Choice for South Florida Properties</h2>
-          <p>Flat roofing delivers a sleek, modern aesthetic that perfectly complements contemporary architecture throughout West Palm Beach and South Florida. Whether you own a commercial building or a modern residential home, flat roofs offer a practical and visually appealing solution.</p>
+          <p>Flat roofing delivers a sleek, modern aesthetic that perfectly complements contemporary architecture throughout South Florida. Whether you own a commercial building or a modern residential home, flat roofs offer a practical and visually appealing solution.</p>
           <p>Designed for both commercial and residential applications, flat roofing systems maximize your property's usable space while providing reliable protection against Florida's heavy rains, intense UV exposure, and hurricane-force winds.</p>
           <p>At Roofing Palm, we specialize in flat roof installation, repair, and replacement using industry-leading materials and techniques that are engineered specifically for the South Florida climate.</p>
           <div class="features-list" style="margin-top: 24px;">
@@ -436,28 +436,30 @@
         <div class="contact-form animate-on-scroll">
           <h3>Get a Free Flat Roof Estimate</h3>
           <p style="margin-bottom: 24px;">Fill out the form below and we'll get back to you within 24 hours.</p>
-          <form>
+          <form action="https://formsubmit.co/admin@royaleagleweb.com" method="POST">
+              <input type="hidden" name="_next" value="https://roofingpalm.com">
+              <input type="hidden" name="_captcha" value="true">
             <div class="form-row">
               <div class="form-group">
                 <label>First Name</label>
-                <input type="text" placeholder="John" required>
+                <input type="text" placeholder="John" name="first_name" required>
               </div>
               <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" placeholder="Smith" required>
+                <input type="text" placeholder="Smith" name="last_name" required>
               </div>
             </div>
             <div class="form-group">
               <label>Email</label>
-              <input type="email" placeholder="you@email.com" required>
+              <input type="email" placeholder="you@email.com" name="email" required>
             </div>
             <div class="form-group">
               <label>Phone</label>
-              <input type="tel" placeholder="(561) 000-0000" required>
+              <input type="tel" placeholder="(561) 000-0000" name="phone" required>
             </div>
             <div class="form-group">
               <label>Service Interested In</label>
-              <select>
+              <select name="service">
                 <option value="">Select a service...</option>
                 <option>Flat Roof Installation</option>
                 <option>Flat Roof Repair</option>
@@ -469,7 +471,7 @@
             </div>
             <div class="form-group">
               <label>Message</label>
-              <textarea placeholder="Tell us about your flat roof project..." rows="4"></textarea>
+              <textarea placeholder="Tell us about your flat roof project..." name="message" rows="4"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
           </form>

@@ -438,28 +438,30 @@
         <div class="contact-form animate-on-scroll">
           <h3>Request Emergency Service</h3>
           <p style="margin-bottom: 24px;">For the fastest response, call us directly. You can also submit this form and we will contact you immediately.</p>
-          <form>
+          <form action="https://formsubmit.co/admin@royaleagleweb.com" method="POST">
+              <input type="hidden" name="_next" value="https://roofingpalm.com">
+              <input type="hidden" name="_captcha" value="true">
             <div class="form-row">
               <div class="form-group">
                 <label>First Name</label>
-                <input type="text" placeholder="John" required>
+                <input type="text" placeholder="John" name="first_name" required>
               </div>
               <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" placeholder="Smith" required>
+                <input type="text" placeholder="Smith" name="last_name" required>
               </div>
             </div>
             <div class="form-group">
               <label>Phone (Best to Reach You)</label>
-              <input type="tel" placeholder="(561) 000-0000" required>
+              <input type="tel" placeholder="(561) 000-0000" name="phone" required>
             </div>
             <div class="form-group">
               <label>Email</label>
-              <input type="email" placeholder="you@email.com" required>
+              <input type="email" placeholder="you@email.com" name="email" required>
             </div>
             <div class="form-group">
               <label>Type of Emergency</label>
-              <select required>
+              <select name="service" required>
                 <option value="">Select emergency type...</option>
                 <option>Storm Damage</option>
                 <option>Active Roof Leak</option>
@@ -473,7 +475,7 @@
             </div>
             <div class="form-group">
               <label>Describe the Emergency</label>
-              <textarea placeholder="Please describe the damage, when it occurred, and any immediate concerns..." rows="4" required></textarea>
+              <textarea placeholder="Please describe the damage, when it occurred, and any immediate concerns..." name="message" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Submit Emergency Request</button>
             <div class="form-trust">

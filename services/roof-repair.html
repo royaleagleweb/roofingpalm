@@ -415,28 +415,30 @@
         <div class="contact-form animate-on-scroll">
           <h3>Request a Repair Estimate</h3>
           <p style="margin-bottom: 24px;">Describe the issue and we will get back to you within 24 hours with a plan of action.</p>
-          <form>
+          <form action="https://formsubmit.co/admin@royaleagleweb.com" method="POST">
+              <input type="hidden" name="_next" value="https://roofingpalm.com">
+              <input type="hidden" name="_captcha" value="true">
             <div class="form-row">
               <div class="form-group">
                 <label>First Name</label>
-                <input type="text" placeholder="John" required>
+                <input type="text" placeholder="John" name="first_name" required>
               </div>
               <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" placeholder="Smith" required>
+                <input type="text" placeholder="Smith" name="last_name" required>
               </div>
             </div>
             <div class="form-group">
               <label>Email</label>
-              <input type="email" placeholder="you@email.com" required>
+              <input type="email" placeholder="you@email.com" name="email" required>
             </div>
             <div class="form-group">
               <label>Phone</label>
-              <input type="tel" placeholder="(561) 000-0000" required>
+              <input type="tel" placeholder="(561) 000-0000" name="phone" required>
             </div>
             <div class="form-group">
               <label>Type of Repair Needed</label>
-              <select>
+              <select name="service">
                 <option value="">Select repair type...</option>
                 <option>Leak Repair</option>
                 <option>Storm Damage Repair</option>
@@ -450,7 +452,7 @@
             </div>
             <div class="form-group">
               <label>Describe the Issue</label>
-              <textarea placeholder="Tell us about the damage or problem you're experiencing..." rows="4"></textarea>
+              <textarea placeholder="Tell us about the damage or problem you're experiencing..." name="message" rows="4"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Request Repair Estimate</button>
           </form>
